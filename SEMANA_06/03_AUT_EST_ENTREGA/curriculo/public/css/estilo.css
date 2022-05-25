@@ -1,0 +1,22 @@
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#fotoperfil {
+  border-radius: 100%;
+  display:flex;
+  margin:auto;
+}
+
+h1{
+  background-color: rgb(255, 214, 80);
+  text-align: right;
+}
+
+h2{
+  text-align: center;
+}
+
+h3 {
+  background-color: rgb(194, 194, 194);
+}
