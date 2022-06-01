@@ -1,3 +1,3 @@
 $(document).ready(function () {
-  $('#nova-linha').html('Nova Linha adicionada com JavaScript.')
+  $('#nova-linha').html('Meu currículo.')
 })
