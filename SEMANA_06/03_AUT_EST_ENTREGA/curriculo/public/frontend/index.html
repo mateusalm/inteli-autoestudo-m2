@@ -43,7 +43,14 @@
     </ul>
     <h3>Contato</h3>
     <p div="contato">Linkedin: <a href="https://www.linkedin.com/in/mateussda/" target="_blank" rel="external"><img src="img/linkedin-icon.png" alt="icone do linkedin" width="30"></a></p>
-    <div id="nova-linha"></div>
-    <script src="js/nova-linha.js"></script>
+    <div id="comentarios">
+      <h3>Comentários</h3>
+      <form action="comentarios">
+        <textarea name="comentario" id="comentario" cols="80" rows="2"></textarea>
+        <button type="button" onclick="comentar()">Comentar</button>
+        <ul id="lista-comentarios"></ul>
+      </form>
+    </div>
+    <script src="js/comentarios.js"></script>
   </body>
 </html>
