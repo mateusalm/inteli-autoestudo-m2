@@ -1,10 +1,14 @@
 const express = require('express')
 const app = express()
+const path = require('path')
+const port = process.env.PORT || 8080
 
-const hostname = '127.0.0.1'
-const port = 3015
-app.use(express.static('public'))
+const backendRoute = require('../curriculo/routes/backend')
 
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
+app.use('/data', backendRoute)
+
+app.use(express.json())
+
+const server = app.listen(port, () => {
+  console.log('Servidor executando na porta ' + server.address().port)
 })
