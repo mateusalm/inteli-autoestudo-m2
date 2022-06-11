@@ -3,9 +3,11 @@ const app = express()
 const path = require('path')
 const port = process.env.PORT || 8080
 
-const backendRoute = require('../curriculo/routes/backend')
+const backendRoute = require('./routes/cursos')
 
 app.use('/data', backendRoute)
+
+app.use(express.static(path.join(__dirname, 'frontend')))
 
 app.use(express.json())
 
